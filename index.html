@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+    <head>
+        <title>Alle bamser har en historie - Teddy Bear Art Museum</title>
+        <meta name="description" content="Du havde sikkert en ynglingsbamse da du var lille, eller også har dit barn en ynglingsbamse. Måske har du været igennem noget rørende med din bamse eller har en bestemt grund til at den bamse blev din ynglingsbamse. Del din historie her med andre.">
+        <link rel=”canonical” href=”http:/loneiversen.dk”>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <section id="welcome">
+            <div class="content">
+                <header><h1>Teddy Bear Art Museum</h1></header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Enhver bamser har en historie</a></li>
+                        <li><a href="#">Events og workshops</a></li>
+                        <li><a href="#">Besøg museet & location</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <aside>
+            </aside>
+            <div class="clear"></div>
+        </section>
+        
+        <section id="teddystory">
+            <aside id="pushstory"></aside>
+            <div class="content">
+                <article>
+                    <header>
+                        <h1>Enhver bamse har en historie</h1>
+                        <h2>Bamse-operationen</h2>
+                    </header>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.<br><br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                    <span onclick="triggerSidecontent()">Læs museets historie om Alfonzo</span>
+                    </p>
+                </article>
+            </div>
+            <div class="sidecontent" id="alfonzo">
+                <article id="alfonzo-article">
+                    <h1>Alfonzo</h1>
+                    <p>No no no</p>
+                    <span onclick="hideSidecontent()">-Tilbage</span>
+                </article>
+            </div>
+            <script>
+                function triggerSidecontent() {
+                    document.getElementById("alfonzo").style.width = "25%";
+                    document.getElementById("pushstory").style.width = "25%";
+                }
+                function hideSidecontent() {
+                    document.getElementById("alfonzo").style.width = "0";
+                    document.getElementById("pushstory").style.width = "50%";
+                }
+            </script>
+            <div class="clear"></div>
+        </section>
+        
+        <section id="workshops">
+            <div class="content">
+                <article>
+                    <header>
+                        <h1>Workshops og Events</h1>
+                    </header>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    <br>    
+                    <br>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?<br>
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                </article>
+            </div>
+            <aside></aside>
+            <div class="clear"></div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <div class="c3">
+                <h2>Location</h2>
+                <p>Hans Jensensvej 3<br>
+                    7190 Billund<br>
+                    Danmark<br><br>
+                    Tlf.: + 45 75 33 18 45<br>
+                    Mail: Info@TeddyBearArtMuseum.dk<br>
+                    CVR nr.: 37453528<br>
+                    <br>
+                    Find vej</p>
+            </div>
+            <div class="c3">
+                <h2>Åbningstider</h2>
+                <p><span class="optimes">Mandag</span> Lukket<br>
+                    <span class="optimes">Tirsdag</span> 10.00 - 17.00<br>
+                    <span class="optimes">Onsdag</span> 10.00 - 17.00<br>
+                    <span class="optimes">Torsdag</span> 10.00 - 20.00<br>
+                    <span class="optimes">Fredag</span> 10.00 - 17.00<br>
+                    <span class="optimes">Lørdag</span> 10.00 - 16.00<br>
+                    <span class="optimes">Søndag</span> 10.00 - 16.00<br>
+                    <span class="optimes">Januar</span> Lukket</p></div>
+            <div class="c3">
+                <h2>Priser og Entré</h2>
+                <p>Voksen  DKK 100<br>
+                    Barn DKK 80<br>
+                    Børn under 2 år GRATIS<br>
+                    Familiebillet DKK 300<br>
+                    Årskort <br><br>
+                    Se Tilbud</p>
+            </div>
+            <div class="clear"></div>
+        </footer>
+        
+        <script>
+            
+        </script>
+    </body>
+</html>
