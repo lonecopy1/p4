@@ -14,9 +14,9 @@
                 <header><h1>Teddy Bear Art Museum</h1></header>
                 <nav>
                     <ul>
-                        <li><a href="#">Enhver bamser har en historie</a></li>
-                        <li><a href="#">Events og workshops</a></li>
-                        <li><a href="#">Besøg museet & location</a></li>
+                        <li><a href="#teddystory">Enhver bamser har en historie</a></li>
+                        <li><a href="#workshops">Events og workshops</a></li>
+                        <li><a href="#visit">Besøg museet & location</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,8 +34,12 @@
                         <h2>Bamse-operationen</h2>
                     </header>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.<br><br>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                    Vi havde bamsedag på skolen og jeg tog min yngligsbamse Henriette med, og jeg var så spændt på at lege med mine klassekammerater den dag. Desværre kastede jeg op og var syg. Lærerne ringede til min mor som kom og samlede mig op.<br><br>Vi glemte alt om bamsen og kunne ikke finde hende næste dag på skolen. Der kom en af mine klassekammerater løbende med min bamse til de voksne. Hun havde reddet den fra drengene som havde spillet fodbold med hende. Jeg så bamsen og begyndte at græde endnu mere. Hun var helt ødelagt.<br><br>Så kom superhelten farmor, tog hende hjem og opererede hende. Det var værst i ryggen. Hun fik nye øjne og ny ryg. Henriette har stadig sit gamle blomstertøj på, bare med lysegul ryg. Jeg har hende stadig til den dag i dag.<br><br>
+                    Del denne historie<br>
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/facebook.png"> <img src="https://img.icons8.com/ultraviolet/40/000000/instagram-new.png">
+                    <br><br>
+                    
+                        
                     <span onclick="triggerSidecontent()">Læs museets historie om Alfonzo</span>
                     </p>
                 </article>
@@ -51,8 +55,10 @@
                 function triggerSidecontent() {
                     document.getElementById("alfonzo").style.width = "25%";
                     document.getElementById("pushstory").style.width = "25%";
+                    document.getElementById("alfonzo").style.display = "block";
                 }
                 function hideSidecontent() {
+                    document.getElementById("alfonzo").style.display = "none";
                     document.getElementById("alfonzo").style.width = "0";
                     document.getElementById("pushstory").style.width = "50%";
                 }
@@ -61,22 +67,59 @@
         </section>
         
         <section id="workshops">
+            <div class="sidecontent" id="pushwork">
+                <article id="workshop-info">
+                    <h1>Kursusdatoer</h1>
+                    <p>Lørdag 16. marts kl. 9.30 - 16.30<br>
+                    Søndag d. 17 marts kl. 9.30 - 16.30<br><br>
+                    
+                    Bemærk alle kurser foregår på begge dage fordelt på 2 dage inkl 1 times frokostpause hver dag.
+                    <br><br>
+                    Prisen er 1.500kr / person inkl moms.<br><br>
+                    Kursusprisen inkluderer materialer til at sy en bamse. Bamsen er Karl Emil. Prisen inkluderer også undervisning, forbrug af diverse tråd, lån af værktøj, kaffe/the samt entré til museet. 
+                    <br><br>
+                    Underviser: Gitte Thorsen<br><br>
+                    <span onclick="triggerHide()">Skjul</span>  </p>
+                    
+                </article>
+            </div>
             <div class="content">
                 <article>
                     <header>
-                        <h1>Workshops og Events</h1>
+                        <h1>Workshop</h1>
+                        <h2>Sy din egen bamse</h2>
                     </header>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                    <br>    
-                    <br>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?<br>
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                    <p>Du kan vælge at sy din egen bamse på en af vores bamsekurser eller køb et mønster som du selv kan sy hjemme. I Bamsemuseet får du kyndig vejledning. Vores sysæt er udviklet af den prisbelønnede bamsekunstner Gitte Thorsen.<br><br>
+                    
+                    Museet arrangerer særlige bamsesyningskurser samt andre kreative kurser. Her får du professionel hjælp og vejledning til at skabe din egen personlige bamse. <br><br>
+
+                    Du vil få undervisning i at sy en bamse helt fra bunden. Fra stoffet udklippes, delene syes sammen i hånden, bamsedelene stoppes og samles, og til du til slut giver din bamse dit helt personlige udtryk. Du behøver ikke erfaring med bamsesyning, men har du det, gør det ikke noget, da der også er nye tips at lære.<br><br>
+                        
+                    <span onclick="triggerShow()">Se priser og dato for næste kursus</span>                        
+                    <br><br>
+                    
+                    Læs mere på <a href="http://teddybearartmuseum.dk/sy-din-egen-bamse">Teddy Bear Art Museum - Sy din egen bamse</a>.</p>
                 </article>
             </div>
-            <aside></aside>
+            <aside id="stof"></aside>
             <div class="clear"></div>
         </section>
+         <script>
+            function triggerShow() {
+                document.getElementById("workshop-info").style.display = "block";
+                document.getElementById("pushwork").style.width = "25%";
+                document.getElementById("stof").style.width = "25%";
+            }
+            function triggerHide() {
+                document.getElementById("stof").style.width = "50%";
+                document.getElementById("workshop-info").style.display = "none";
+                document.getElementById("pushwork").style.width = "0";
+            }
+        </script>
+        
+        
         <div class="clear"></div>
-        <footer>
+        <footer id="visit">
             <div class="c3">
                 <h2>Location</h2>
                 <p>Hans Jensensvej 3<br>
@@ -109,9 +152,5 @@
             </div>
             <div class="clear"></div>
         </footer>
-        
-        <script>
-            
-        </script>
     </body>
 </html>
