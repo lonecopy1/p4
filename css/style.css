@@ -60,8 +60,6 @@ article {
 .sidecontent article {
     padding:14.9%;
     margin:0;
-    width:;
-    
 }
 
 /* ------ */
@@ -152,6 +150,7 @@ nav a:hover {
 
 section#teddystory {
     height:75%;
+    overflow-x:hidden;
 }
 
 section#teddystory .content {
@@ -215,6 +214,11 @@ section#workshops p {
     color:#272c4c;
 }
 
+
+#pushwork, #alfonzo-article{
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
 
 
 /* -------- FOOTER ------- */
